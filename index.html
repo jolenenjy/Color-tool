@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Gimme Color Shades</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    </head>
+    <body>  
+        <div class="hero">
+            <h1>I just want my color shades</h1>
+            <!-- <p>Enter in the color code and generate a range of colors. 🎉</p> -->
+            <div class="inputs">
+                <div class="input-container">
+                        <label for="hexcode">Hex Code</label>
+                        <input id="color" class="colors" checked="checked" type="text" name="hexcode" placeholder="F2F4F7">
+                        <span id="error"></span>
+                </div>
+                <button type="button" onclick="getcol()">Gimme</button>
+            </div>
+        </div>
+        <div class="results">
+            <div class="colors">
+                <div id="col1" class="col1 block"></div>
+                <div id="col2" class="col2 block"></div>
+                <div id="col3" class="col3 block"></div>
+                <div id="col4" class="col4 block"></div>
+                <div id="col5" class="col5 block"></div>
+                <div id="col6" class="col6 block"></div>
+                <div id="col7" class="col7 block"></div>
+            </div>
+        </div>
+        <script type='text/javascript' src='//code.jquery.com/jquery-1.10.1.js'></script>
+        <script type='text/javascript' src="main.js"></script>
+    </body>
+</html>
